@@ -14,10 +14,11 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
+import { GridItem, WorkGridItem } from '../components/grid-item'
 import Image from 'next/image'
-import { GridItem } from '../components/grid-item'
-import catImage from '../public/images/cat.jpg'
+import neuralcloud from '../public/images/neuralcloudcropped.png'
+import slicepainted from '../public/images/slice.png'
 
 const Page = () => {
   return (
@@ -155,23 +156,15 @@ const Page = () => {
   
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          I've Worked On
+          Some Things I've Worked On
         </Heading>
-      <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/"
-            title="Cat"
-            thumbnail={catImage}
-          >
-            Cat 1
-          </GridItem>
-          <GridItem
-            href="https://www.youtube.com/"
-            title="Cat"
-            thumbnail={catImage}
-          >
-           Cat 2
-          </GridItem>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <WorkGridItem id="neuralodes" title="Neural ODEs" thumbnail={neuralcloud}>
+            Neural ODEs and Symbolic Regression for Infalling Clouds
+          </WorkGridItem>
+          <WorkGridItem id="mixinglayer" title="Turbulent Mixing Layers" thumbnail={slicepainted}>
+          Radiative Turbulent Mixing layers
+          </WorkGridItem>
         </SimpleGrid>
       </Section>
 

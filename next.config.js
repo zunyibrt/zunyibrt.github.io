@@ -1,4 +1,5 @@
-module.exports = {
+const withMDX = require('@next/mdx')()
+module.exports = withMDX({
   output: "export",
   reactStrictMode: true,
   webpack: (config, options) => {
@@ -9,4 +10,4 @@ module.exports = {
 
       return config;
   }
-};
+});

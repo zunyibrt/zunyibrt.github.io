@@ -5,7 +5,7 @@ const CustomIcon = props => {
         <circle cx="10" cy="10" r="10" fill="#333A3F" />
         
         {/* <!-- Divisions similar to the uploaded image --> */}
-        <path d="M 9 0 L 9 20 M 9 8 L 20 8" stroke="#FFFFFF" stroke-width="0.8"/>
+        <path d="M 9 0 L 9 20 M 9 8 L 20 8" stroke="#FFFFFF" strokeWidth="0.8"/>
         
         {/* <!-- Stars --> */}
         <circle cx="5.5" cy="3.9" r=".3" fill="#FFFFFF" />
