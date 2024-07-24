@@ -131,10 +131,10 @@ const VoxelModel = () => {
   
         let req = null
         let frame = 0
-        const animate = () => {
+        const animate = (time) => {
           req = requestAnimationFrame(animate)
   
-          frame = frame + 1
+          frame = frame <= 100 ? frame + 1 : frame
   
           if (frame <= 100) {
             const p = initialCameraPosition
@@ -150,7 +150,7 @@ const VoxelModel = () => {
             controls.update()
           }
 
-          pMaterial.uniforms.time.value = frame * 0.08;
+          pMaterial.uniforms.time.value = time * 0.004;
           
           if (localStorage.getItem("chakra-ui-color-mode") === "dark") {
             pMaterial.uniforms.color.value = new THREE.Color(0xffffff);

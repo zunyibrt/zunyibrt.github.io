@@ -4,6 +4,7 @@ import {
   Container,
   Heading,
   Box,
+  Flex,
   SimpleGrid,
   Button,
   List,
@@ -21,25 +22,76 @@ import catImage from '../public/images/cat.jpg'
 const Page = () => {
   return (
     <Container> 
-        <Box
+        <Flex
+          direction={{
+            base: "column",
+            sm: "row"
+          }}
+          wrap = "wrap"
           borderRadius="lg"
           mb={6}
           p={3}
-          textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-            There are more things in Heaven and Earth,<br></br>Horatio, 
-            than are dreamt of in your philosophy.
-        </Box>
+          <Box 
+            flexGrow={1}
+            flexShrink={0} 
+            textAlign={{
+              base: "center",
+              sm: "right"
+            }}
+          >
+            There are more things&nbsp; 
+          </Box>
+          <Box 
+            flexGrow={1}
+            flexShrink={0} 
+            textAlign={{
+              base: "center",
+              sm: "left"
+            }}
+          >
+            in Heaven and Earth,
+          </Box>
+          <Box 
+            flexGrow={1}
+            flexShrink={0} 
+            textAlign={{
+              base: "center",
+              sm: "right"
+            }}
+          >
+            Horatio, than are dreamt&nbsp; 
+          </Box>
+          <Box 
+            flexGrow={1}
+            flexShrink={0} 
+            textAlign={{
+              base: "center",
+              sm: "left"
+            }}
+          >
+            of in your philosophy.
+          </Box>
+        </Flex>
 
         <Box display={{md: "flex" }}>
           <Box flexGrow={1} alignContent={"center"}>
-            <Box>
+            <Flex 
+              direction={{
+                base: "column",
+                sm: "row"
+              }}
+              wrap = "wrap"
+            >
               <Heading as="h2" variant="page-title">
-                  Brent Tan / <span style={{fontFamily: "Noto Sans SC"}}>陈遵毅</span>
+                Brent Tan&nbsp;
               </Heading>
-            </Box>
+              <Heading as="h2" variant="page-title">
+                / <span style={{fontFamily: "Noto Sans SC"}}>陈遵毅</span>
+              </Heading>
+            </Flex>
             <p> Flatiron Research Fellow </p>
           </Box>
           <Box
@@ -151,13 +203,13 @@ const Page = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="mailto:btan@flatironinstiute.org" target="_blank">
+            <Link href="mailto:btan@flatironinstitute.org" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<EmailIcon />}
               >
-                btan@flatironinstiute.org
+                btan@flatironinstitute.org
               </Button>
             </Link>
           </ListItem>
