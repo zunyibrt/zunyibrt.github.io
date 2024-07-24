@@ -1,30 +1,27 @@
 import NextLink from 'next/link'
-import { Box, Container, Heading, Link } from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Divider, Flex, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import { WorkGridItem } from '../components/grid-item'
+import Image from 'next/image'
+import rdj from '../public/images/coral_A.png'
 
 const Papers = () => (
-<Layout title="Publications">
+<Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Publications
+        Personal Projects
       </Heading>
 
-      <Box my={4}>
-        You can find a list of my publications on&nbsp;
-        <Link as={NextLink} href="https://ui.adsabs.harvard.edu/public-libraries/_VGfOMavSNaM6jQqVbYhPw">
-          ADS
-        </Link>
-        , on my&nbsp;
-        <Link as={NextLink} href="https://orcid.org/0000-0003-4805-6807">
-          Orcid Profile
-        </Link>
-        , or on my&nbsp; 
-        <Link as={NextLink} href="https://scholar.google.com/citations?user=J8TJmdsAAAAJ&hl=en">
-        Google Scholar profile
-        </Link>
-        .
-      </Box>
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
+        <Section>
+          <WorkGridItem id="reactiondiffusion" title="Grey-Scott (JAX)" thumbnail={rdj}>
+          Differentiable Reaction-Diffusion Simulation in JAX
+          </WorkGridItem>
+        </Section>
 
+      </SimpleGrid>
+      
     </Container>
   </Layout>
 )

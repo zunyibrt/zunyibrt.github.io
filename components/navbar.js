@@ -81,7 +81,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
               Research
             </LinkItem>
             <LinkItem href="/papers" path={path}>
-              Papers
+              Projects
             </LinkItem>
             <LinkItem href="/writing" path={path}>
               Writing
@@ -118,7 +118,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                     Research
                   </MenuItem>
                   <MenuItem as={MenuLink} href="/papers">
-                    Papers
+                    Projects
                   </MenuItem>
                   <MenuItem as={MenuLink} href="/writing">
                     Writing

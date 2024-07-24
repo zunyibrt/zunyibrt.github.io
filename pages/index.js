@@ -169,6 +169,25 @@ const Page = () => {
       </Section>
 
       <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Publications
+          </Heading>
+          <Box my={4}>
+          You can find a list of my publications on&nbsp;
+          <Link as={NextLink} href="https://ui.adsabs.harvard.edu/public-libraries/_VGfOMavSNaM6jQqVbYhPw">
+            ADS
+          </Link>
+          , on my&nbsp;
+          <Link as={NextLink} href="https://orcid.org/0000-0003-4805-6807">
+            Orcid Profile
+          </Link>
+          , or on my&nbsp; 
+          <Link as={NextLink} href="https://scholar.google.com/citations?user=J8TJmdsAAAAJ&hl=en">
+          Google Scholar profile
+          </Link>
+          .
+        </Box>
+
         <Heading as="h3" variant="section-title">
           You Can Reach Me At
         </Heading>
