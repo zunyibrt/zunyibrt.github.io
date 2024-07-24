@@ -1,6 +1,6 @@
 # Brent's Homepage
 
-[zunyibrt.github.io](https://www.zunyibrt.github.io/)
+[zunyibrt.github.io](https://zunyibrt.github.io/)
 
 ## Stack
 
