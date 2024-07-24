@@ -40,20 +40,6 @@ const Research = () => (
           - Robert Frost
         </Box>
 
-      {/* Fire and Ice
-
-      Some say the world will end in fire,
-      Some say in ice.
-      From what I’ve tasted of desire
-      I hold with those who favor fire.
-      But if it had to perish twice,
-      I think I know enough of hate
-      To say that for destruction ice
-      Is also great
-      And would suffice.
-
-      Robert Frost */}
-
       In broad strokes, my primary research interest lies in the physics of the multiphase environments in and around galaxies. This encompasses the galaxies themselves, the vast reservoir of material that surrounds them (known as the circumgalactic medium (CGM)), and the flows that connect the two. These flows govern galaxy growth and evolution by coupling the galaxies and their CGM. Outflows transport material away from the galaxy, while inflows set the fuel budget for future star formation. They hence comprise much of the machinery by which galaxies self-regulate.
 
       <Box w="100%" textAlign="center" my={6}>
@@ -67,10 +53,10 @@ const Research = () => (
       </Box>
       Faucher-Giguere & Oh 2023 {/* https://ui.adsabs.harvard.edu/abs/2023ARA%26A..61..131F/abstract */}
 
-      {/* A large focus of my work is studying how the multiphase nature of these systems, which observations have steadily uncovered, shape them. Despite being ubiquitous, many uncertainties remain due to their surprisingly rich complexity. Combining analytic theory with numerical simulations, I investigate their inner workings so as to understand and model them. 
+      A large focus of my work is studying how the multiphase nature of these systems, which observations have steadily uncovered, shape them. Despite being ubiquitous, many uncertainties remain due to their surprisingly rich complexity. Combining analytic theory with numerical simulations, I investigate their inner workings so as to understand and model them. 
 
       The projects below are presented in a systemic way, starting at the smallest scales in the problem with a deep dive into the interfaces between phases and how they determine bulk evolution. The following work then explores the connection between these mixing layers and observables. Applying these results to larger scales, I also looked at cold clouds moving through hot backgrounds, both infalling under gravity and in turbulent outflowing winds. The laddering of scales in my simulations:
-      Snapshots from my simulations showing the hierarchy of scales in this summary. Sections 1 and 2 deal with radiative turbulent mixing layers, while 3 and 4 deal with individual clouds and galactic winds respectively. */}
+      {/* Snapshots from my simulations showing the hierarchy of scales in this summary. Sections 1 and 2 deal with radiative turbulent mixing layers, while 3 and 4 deal with individual clouds and galactic winds respectively. */}
       <Box w="100%" textAlign="center" my={6}>
         <Image
           src={overview_scales}
@@ -80,7 +66,7 @@ const Research = () => (
           loading="lazy"
         /> 
       </Box>
-
+      Recently, I have been extending this work in several directions, including trying to understand the roles of thermal conduction and magnetic fields in these systems. I am also exploring the application of machine learning techniques to tackle some of these problems.
       <Box w="100%" textAlign="center" my={6}>
         <Image
           src={futurefocus}
