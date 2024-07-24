@@ -30,4 +30,4 @@ const Papers = () => (
 )
 
 export default Papers
-export { getServerSideProps } from '../components/chakra'
+// export { getServerSideProps } from '../components/chakra'

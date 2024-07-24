@@ -44,4 +44,4 @@ const Research = () => (
 )
 
 export default Research
-export { getServerSideProps } from '../components/chakra'
+// export { getServerSideProps } from '../components/chakra'
