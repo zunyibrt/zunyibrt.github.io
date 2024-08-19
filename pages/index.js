@@ -156,7 +156,7 @@ const Page = () => {
   
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Some Things I've Worked On
+          My Recent Research Interests Include:
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <WorkGridItem id="neuralodes" title="Neural ODEs" thumbnail={neuralcloud}>
@@ -170,7 +170,7 @@ const Page = () => {
 
       <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Publications
+            To Read More
           </Heading>
           <Box my={4}>
           You can find a list of my publications on&nbsp;
