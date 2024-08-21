@@ -23,7 +23,7 @@ import {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Paper</Meta>
-            <Link href="">
+            <Link href="https://arxiv.org/abs/2408.10387">
             Neural ODEs and Symbolic Regression <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

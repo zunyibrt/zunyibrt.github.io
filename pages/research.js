@@ -1,6 +1,7 @@
 import { Box, Container, Heading, SimpleGrid, Divider, Flex, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import P from '../components/paragraph'
 import { WorkGridItem } from '../components/grid-item'
 import Image from 'next/image'
 
