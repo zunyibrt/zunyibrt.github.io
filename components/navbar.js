@@ -77,15 +77,15 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/research" path={path}>
-              Research
-            </LinkItem>
+            <LinkItem href="/writing" path={path}>
+              Posts
+            </LinkItem>  
             <LinkItem href="/papers" path={path}>
               Projects
             </LinkItem>
-            <LinkItem href="/writing" path={path}>
-              Writing
-            </LinkItem>   
+            <LinkItem href="/research" path={path}>
+              Research
+            </LinkItem>
             <LinkItem
               target="_blank"
               href="https://github.com/zunyibrt"
@@ -114,14 +114,14 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                   <MenuItem as={MenuLink} href="/">
                     About
                   </MenuItem>
-                  <MenuItem as={MenuLink} href="/research">
-                    Research
+                  <MenuItem as={MenuLink} href="/writing">
+                    Posts
                   </MenuItem>
                   <MenuItem as={MenuLink} href="/papers">
                     Projects
                   </MenuItem>
-                  <MenuItem as={MenuLink} href="/writing">
-                    Writing
+                  <MenuItem as={MenuLink} href="/research">
+                    Research
                   </MenuItem>
                   <MenuItem
                     as={Link}

@@ -17,7 +17,7 @@ import slicepainted from '../public/images/slice.png'
 const Research = () => (
   <Layout title="Works">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as="h3" fontSize={20} mb={4} mt={5}>
         Cool Things That Matter
       </Heading>
 
@@ -41,7 +41,7 @@ const Research = () => (
           - Robert Frost
         </Box>
 
-      In broad strokes, my primary research interest lies in the physics of the multiphase environments in and around galaxies. This encompasses the galaxies themselves, the vast reservoir of material that surrounds them (known as the circumgalactic medium (CGM)), and the flows that connect the two. These flows govern galaxy growth and evolution by coupling the galaxies and their CGM. Outflows transport material away from the galaxy, while inflows set the fuel budget for future star formation. They hence comprise much of the machinery by which galaxies self-regulate.
+      In broad strokes, my primary research interest lies in the physics of the multiphase environments in and around galaxies. This encompasses the galaxies themselves, the vast reservoir of material that surrounds them (known as the circumgalactic medium (CGM)), and the flows that connect the two. These flows govern galaxy growth and evolution by coupling the galaxies and their CGM. Outflows transport material away from the galaxy, while inflows set the fuel budget for future star formation. They hence comprise much of the machinery by which galaxies self-regulate. The figure below from Faucher-Giguere & Oh (2023) illustrates the various scales at which these flows operate.
 
       <Box w="100%" textAlign="center" my={6}>
         <Image
@@ -52,7 +52,7 @@ const Research = () => (
           loading="lazy"
         /> 
       </Box>
-      Faucher-Giguere & Oh 2023 {/* https://ui.adsabs.harvard.edu/abs/2023ARA%26A..61..131F/abstract */}
+      {/* Faucher-Giguere & Oh 2023 https://ui.adsabs.harvard.edu/abs/2023ARA%26A..61..131F/abstract */}
 
       A large focus of my work is studying how the multiphase nature of these systems, which observations have steadily uncovered, shape them. Despite being ubiquitous, many uncertainties remain due to their surprisingly rich complexity. Combining analytic theory with numerical simulations, I investigate their inner workings so as to understand and model them. 
 
@@ -67,7 +67,7 @@ const Research = () => (
           loading="lazy"
         /> 
       </Box>
-      Recently, I have been extending this work in several directions, including trying to understand the roles of thermal conduction and magnetic fields in these systems. I am also exploring the application of machine learning techniques to tackle some of these problems.
+      I have been extending this work in several directions, including trying to understand the roles of thermal conduction and magnetic fields in these systems. I am also exploring the application of machine learning techniques to tackle some of these problems.
       <Box w="100%" textAlign="center" my={6}>
         <Image
           src={futurefocus}
@@ -80,7 +80,7 @@ const Research = () => (
       
       <Divider my={6} />
       <Heading as="h3" fontSize={20} mb={4}>
-        Projects
+        Related Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} gap={6}>

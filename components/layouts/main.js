@@ -23,7 +23,7 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath} />
 
             <Container maxW="container.md" pt={14}>
-                <VoxelArt />
+                {/* <VoxelArt /> */}
 
                 {children}
 

@@ -9,13 +9,13 @@ import rdj from '../public/images/coral_A.png'
 const Papers = () => (
 <Layout title="Projects">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as="h3" fontSize={20} mb={4} mt={5}>
         Personal Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} gap={6}>
         <Section>
-          <WorkGridItem id="reactiondiffusion" title="Grey-Scott (JAX)" thumbnail={rdj}>
+          <WorkGridItem id="reactiondiffusion" title="Grey-Scott Model" thumbnail={rdj}>
           Differentiable Reaction-Diffusion Simulation in JAX
           </WorkGridItem>
         </Section>

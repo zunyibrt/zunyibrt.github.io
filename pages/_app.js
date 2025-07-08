@@ -2,6 +2,8 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
+import 'highlight.js/styles/github-dark.css';
+import 'katex/dist/katex.min.css';
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'

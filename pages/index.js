@@ -15,7 +15,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
-import { GridItem, WorkGridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-item'
 import Image from 'next/image'
 import neuralcloud from '../public/images/neuralcloudcropped.png'
 import slicepainted from '../public/images/slice.png'
@@ -23,6 +23,83 @@ import slicepainted from '../public/images/slice.png'
 const Page = () => {
   return (
     <Container> 
+        
+        <Box display={{md: "flex" }} mt={{ base: 4, md: 5 }}>
+          <Box flexGrow={1} alignContent={"center"}>
+            <Flex 
+              direction={{
+                base: "column",
+                sm: "row"
+              }}
+              wrap = "wrap"
+            >
+              <Heading as="h2" variant="page-title">
+                Brent Tan&nbsp;
+              </Heading>
+              <Heading as="h2" variant="page-title">
+                / <span style={{fontFamily: "Noto Sans SC"}}>陈遵毅</span>
+              </Heading>
+            </Flex>
+            <p> Thinker, Dreamer </p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 5 }}
+            ml={{ md: 6 }}
+            textAlign="center"
+          >
+            <Box
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              w="250px"
+              h="250px"
+              display="inline-block"
+              borderRadius="full"
+              overflow="hidden"
+            >
+              <Image
+                src="/images/headshot.jpg"
+                alt="Profile image"
+                width="250"
+                height="250"
+              />
+            </Box>
+          </Box>
+        </Box>
+
+        <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Hi There!
+        </Heading>
+        <Paragraph>
+          I'm a Research Software Engineer at the{' '}
+          <Link as={NextLink} href="https://research.astro.cornell.edu/" passHref scroll={false}>
+            Cornell Center for Astrophysics & Planetary Science
+          </Link>
+          {' '}, working remotely from New York City. I earned my Ph.D. in 
+          Astrophysics from UC Santa Barbara
+          and my undergrad at Carnegie Mellon University in Pittsburgh. 
+          Before that, I grew up in Singapore.
+          My research has centered on the physics 
+          of multiphase gas in galactic atmospheres, but lately I've
+          become fascinated by mechanistic intepretability in neural networks.
+          You can find a list of my publications on&nbsp;
+          <Link as={NextLink} href="https://ui.adsabs.harvard.edu/public-libraries/_VGfOMavSNaM6jQqVbYhPw">
+            ADS
+          </Link>
+          , on my&nbsp;
+          <Link as={NextLink} href="https://orcid.org/0000-0003-4805-6807">
+            Orcid Profile
+          </Link>
+          , or on my&nbsp; 
+          <Link as={NextLink} href="https://scholar.google.com/citations?user=J8TJmdsAAAAJ&hl=en">
+          Google Scholar profile
+          </Link>
+          .
+          My favourite quote is from Hamlet:<br /><br />
+        </Paragraph>
+        
         <Flex
           direction={{
             base: "column",
@@ -77,68 +154,6 @@ const Page = () => {
           </Box>
         </Flex>
 
-        <Box display={{md: "flex" }}>
-          <Box flexGrow={1} alignContent={"center"}>
-            <Flex 
-              direction={{
-                base: "column",
-                sm: "row"
-              }}
-              wrap = "wrap"
-            >
-              <Heading as="h2" variant="page-title">
-                Brent Tan&nbsp;
-              </Heading>
-              <Heading as="h2" variant="page-title">
-                / <span style={{fontFamily: "Noto Sans SC"}}>陈遵毅</span>
-              </Heading>
-            </Flex>
-            <p> Flatiron Research Fellow </p>
-          </Box>
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
-          >
-            <Box
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
-              borderStyle="solid"
-              w="250px"
-              h="250px"
-              display="inline-block"
-              borderRadius="full"
-              overflow="hidden"
-            >
-              <Image
-                src="/images/headshot.jpg"
-                alt="Profile image"
-                width="250"
-                height="250"
-                
-              />
-            </Box>
-          </Box>
-        </Box>
-
-        <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Hi There!
-        </Heading>
-        <Paragraph>
-          I'm currently a Flatiron Research Fellow in the{' '}
-          <Link as={NextLink} href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" passHref scroll={false}>
-            Center for Computational Astrophysics
-          </Link>
-          {' '}at the{' '}
-          <Link as={NextLink} href="https://www.simonsfoundation.org/flatiron/" passHref scroll={false}>
-            Flatiron Institute
-          </Link>
-          {' '}in New York City. I received my Ph.D. in Astrophysics from the University of Santa Barbara. 
-          My Research focuses on the physics of multiphase gas in the context of the CGM and feedback in galaxies.
-          
-        </Paragraph>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -154,23 +169,23 @@ const Page = () => {
         </Box>
       </Section>
   
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          My Recent Research Interests Include:
+          I've been thinking about
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <WorkGridItem id="neuralodes" title="Neural ODEs" thumbnail={neuralcloud}>
-            Neural ODEs and Symbolic Regression for Infalling Clouds
+          <WorkGridItem id="mechinterp" title="Mechanistic Interpretability" thumbnail={slicepainted}>
+            Reverse engineering neural networks to understand how they work
           </WorkGridItem>
-          <WorkGridItem id="mixinglayer" title="Turbulent Mixing Layers" thumbnail={slicepainted}>
-          Radiative Turbulent Mixing layers
+          <WorkGridItem id="neuralodes" title="Neural ODEs" thumbnail={neuralcloud}>
+            Upgrading our oldest modelling tools with neural networks
           </WorkGridItem>
         </SimpleGrid>
-      </Section>
+      </Section> */}
 
       <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            To Read More
+          {/* <Heading as="h3" variant="section-title">
+            If you are interested
           </Heading>
           <Box my={4}>
           You can find a list of my publications on&nbsp;
@@ -186,10 +201,10 @@ const Page = () => {
           Google Scholar profile
           </Link>
           .
-        </Box>
+        </Box> */}
 
         <Heading as="h3" variant="section-title">
-          You Can Reach Me At
+          Contact Me
         </Heading>
         <List>
           <ListItem>
@@ -215,13 +230,13 @@ const Page = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="mailto:btan@flatironinstitute.org" target="_blank">
+            <Link href="mailto:brenttanzunyi@gmail.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<EmailIcon />}
               >
-                btan@flatironinstitute.org
+                brenttanzunyi@gmail.com
               </Button>
             </Link>
           </ListItem>
