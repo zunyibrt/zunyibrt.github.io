@@ -73,20 +73,36 @@ const BlogPost = ({ content }) => {
           ),
           
           // Code
-          code: ({ inline, children }) => {
-            return (
-              <Code
-                display="block"
-                p={4}
-                bg="gray.900"
-                color="white"
-                borderRadius="md"
-                overflow="auto"
-                mb={4}
-              >
-                {children}
-              </Code>
-            );
+          code: ({ node, inline, className, children, ...props }) => {
+            // Fallback detection if inline is undefined
+            const isInline = inline ?? !className?.includes('language-');
+            if (isInline) {
+              return (
+                <Code
+                  px={2}
+                  py={0.95}
+                  bg="gray.900"
+                  color="white"
+                  borderRadius="md"
+                >
+                  {children}
+                </Code>
+              );
+            } else {
+              return (
+                <Code
+                  display="block"
+                  p={4}
+                  bg="gray.900"
+                  color="white"
+                  borderRadius="md"
+                  overflow="auto"
+                  mb={4}
+                >
+                  {children}
+                </Code>
+              );
+            }
           },
           
           // Links
