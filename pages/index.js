@@ -40,7 +40,7 @@ const Page = () => {
                 / <span style={{fontFamily: "Noto Sans SC"}}>陈遵毅</span>
               </Heading>
             </Flex>
-            <p> Thinker, Dreamer </p>
+            {/* <p> Thinker, Dreamer </p> */}
           </Box>
           <Box
             flexShrink={0}
@@ -73,17 +73,16 @@ const Page = () => {
           Hi There!
         </Heading>
         <Paragraph>
-          I'm a Research Software Engineer at the{' '}
-          <Link as={NextLink} href="https://research.astro.cornell.edu/" passHref scroll={false}>
-            Cornell Center for Astrophysics & Planetary Science
+          I'm an Astrophysicist based at the{' '}
+          <Link as={NextLink} href="https://cosmo.nyu.edu/" passHref scroll={false}>
+            NYU Center for Cosmology and Particle Physics
           </Link>
-          {' '}, working remotely from New York City. I earned my Ph.D. in 
+          {' '} in New York, where I hold a Postdoctoral position. I earned my Ph.D. in
           Astrophysics from UC Santa Barbara
-          and my undergrad at Carnegie Mellon University in Pittsburgh. 
+          and went to undergrad at Carnegie Mellon University in Pittsburgh. 
           Before that, I grew up in Singapore.
-          My research has centered on the physics 
-          of multiphase gas in galactic atmospheres, but lately I've
-          become fascinated by mechanistic intepretability in neural networks.
+          My research has largely centered on the physics 
+          of multiphase gas, turbulence, and feedback in galactic atmospheres.
           You can find a list of my publications on&nbsp;
           <Link as={NextLink} href="https://ui.adsabs.harvard.edu/public-libraries/_VGfOMavSNaM6jQqVbYhPw">
             ADS
