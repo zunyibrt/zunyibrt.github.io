@@ -77,9 +77,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/writing" path={path}>
+            {/* <LinkItem href="/writing" path={path}>
               Posts
-            </LinkItem>  
+            </LinkItem>   */}
             <LinkItem href="/papers" path={path}>
               Projects
             </LinkItem>

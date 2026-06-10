@@ -203,10 +203,10 @@ const Page = () => {
         </Box> */}
 
         <Heading as="h3" variant="section-title">
-          Contact Me
+          Contact
         </Heading>
         <List>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://github.com/zunyibrt" target="_blank">
               <Button
                 variant="ghost"
@@ -216,8 +216,8 @@ const Page = () => {
                 @zunyibrt
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          {/* <ListItem>
             <Link href="https://twitter.com/BrentTanZY" target="_blank">
               <Button
                 variant="ghost"
@@ -227,7 +227,7 @@ const Page = () => {
                 @BrentTanZY
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <Link href="mailto:brenttanzunyi@gmail.com" target="_blank">
               <Button
